@@ -14,6 +14,10 @@ Nobody in the group is an artist. Assets get sourced from packs and kits, and th
 
 This is also the argument behind the shared archetype skeleton for races. See [[Units]].
 
+### Reference images
+
+All image files live in `98-Images`. Embed them where they explain something, using `![[filename.png]]`. Reference art for outside games belongs in the note that discusses it.
+
 ### Per entity art
 
 Each entity note carries a short Look section. Art does not get its own parallel folder tree. If a single entity's look ever needs more than a few lines, it can get its own note then.

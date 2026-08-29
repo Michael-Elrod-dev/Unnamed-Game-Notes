@@ -76,6 +76,8 @@ Settled conventions get added below as the team makes them.
 - **Markers.** Unresolved items get **Open:**. Suggestions that no one has agreed to get **Proposal:**. Neither is ever silently promoted into plain text.
 - **No manual index notes.** The file explorer and backlinks handle navigation. `Game Overview` is the only hub.
 - **No tags and no frontmatter.** Decided against both.
+- **Images.** Every image file lives in `98-Images` and nowhere else. Obsidian is configured to put pasted and dragged attachments there automatically. Embed with `![[filename.png]]` and never with a path.
+- **Image names.** Name the file after what it shows, including its subject, as in `civ6-hex-terrain.png`. The folder is flat and shared, so `screenshot.png` collides.
 
 ## Scope
 
