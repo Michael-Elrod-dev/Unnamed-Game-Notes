@@ -1,0 +1,245 @@
+# ==============================================================================
+# Unnamed-Game-Notes — Obsidian vault
+#
+# NOTE ON IMAGES / ASSETS:
+# Image, audio, and video files are intentionally NOT ignored. This vault is a
+# design document, and visual references (mockups, mood boards, concept art,
+# screenshots) are part of the content. Commit them.
+# If a single file exceeds ~50 MB, GitHub will warn; ~100 MB is a hard reject.
+# Use Git LFS for anything that large rather than adding it here.
+# ==============================================================================
+
+
+# ------------------------------------------------------------------------------
+# Obsidian
+# ------------------------------------------------------------------------------
+# Shared config (appearance, core-plugins, graph, hotkeys) IS tracked so the
+# whole team gets the same vault setup. Only per-machine churn is ignored below.
+
+# Pane layout + open-file state. Rewritten constantly; conflicts on every pull.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Local caches and indexes
+.obsidian/cache
+.obsidian/*.cache
+.obsidian/plugins/*/data.json.bak
+
+# Community plugin settings often store API keys / tokens. This repo is PUBLIC,
+# so plugin data is ignored by default. Force-add a specific one if it is safe:
+#   git add -f .obsidian/plugins/<plugin-name>/data.json
+.obsidian/plugins/*/data.json
+
+# Obsidian's own soft-delete folder — deleted notes land here
+.trash/
+.obsidian/trash/
+
+# Sync / publish state
+.obsidian/sync.json
+.obsidian/publish.json
+
+
+# ------------------------------------------------------------------------------
+# Claude Code / AI assistants
+# ------------------------------------------------------------------------------
+# CLAUDE.md IS tracked on purpose — it is shared project context for the team.
+
+.claude/settings.local.json
+.claude/*.local.json
+.claude/local/
+.claude/todos/
+.claude/shell-snapshots/
+.claude/statsig/
+.claude/history.jsonl
+
+# Other assistants
+.cursor/
+.cursorignore
+.cursorrules.local
+.aider*
+.windsurf/
+.continue/
+.codeium/
+.github/copilot-instructions.local.md
+
+
+# ------------------------------------------------------------------------------
+# Editors & IDEs
+# ------------------------------------------------------------------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (IntelliJ, Rider, WebStorm, PyCharm, CLion)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+cmake-build-*/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+Session.vim
+.netrwhist
+tags
+
+# Emacs
+*~
+\#*\#
+.\#*
+.dir-locals.el
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Others
+.zed/
+.fleet/
+.helix/
+.history/
+.metals/
+.bloop/
+nbproject/
+
+
+# ------------------------------------------------------------------------------
+# Operating systems
+# ------------------------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+# macOS
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.fseventsd
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.apdisk
+Icon?
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+*~
+
+
+# ------------------------------------------------------------------------------
+# Secrets — never commit to a public repo
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+secrets.json
+credentials.json
+*.credentials
+.netrc
+
+
+# ------------------------------------------------------------------------------
+# Temp / backup / archive noise
+# ------------------------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.log
+.~lock.*#
+~$*
+*.crdownload
+*.part
+*.partial
+
+
+# ------------------------------------------------------------------------------
+# Tooling, if scripts or a site ever get added alongside the notes
+# ------------------------------------------------------------------------------
+node_modules/
+package-lock.json.bak
+.npm/
+.yarn/
+.pnp.*
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+.svelte-kit/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+
+# ------------------------------------------------------------------------------
+# Game-engine build output
+#
+# DELIBERATELY COMMENTED OUT. This is a notes vault, not an engine project.
+# Engine ignore patterns like Builds/, Logs/, Saved/, Temp/ and Binaries/ would
+# silently swallow note folders with those very reasonable names -- "Builds" is
+# an obvious folder for character-build notes.
+#
+# If an actual engine project ever gets nested in here, do NOT uncomment these
+# at the vault root. Put a scoped .gitignore inside that project folder instead,
+# or prefix each rule with the project path (e.g. /Prototype/Library/).
+# ------------------------------------------------------------------------------
+
+# Unity
+# [Ll]ibrary/
+# [Tt]emp/
+# [Oo]bj/
+# [Bb]uild[s]/
+# [Ll]ogs/
+# [Uu]ser[Ss]ettings/
+# *.csproj
+# *.unityproj
+# *.sln
+
+# Godot
+# .godot/
+# .import/
+# export_presets.cfg
+
+# Unreal
+# Binaries/
+# DerivedDataCache/
+# Intermediate/
+# Saved/

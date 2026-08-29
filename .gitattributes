@@ -1,0 +1,45 @@
+# Normalize line endings so Windows/macOS/Linux collaborators don't produce
+# whole-file diffs. Text is stored as LF in the repo and checked out natively.
+* text=auto eol=lf
+
+# Markdown is the content of this vault — always treat as text.
+*.md   text eol=lf
+*.canvas text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.css  text eol=lf
+
+# Binary assets: never diff, never munge line endings.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.bmp  binary
+*.tif  binary
+*.tiff binary
+*.svg  text eol=lf
+*.ico  binary
+*.pdf  binary
+*.psd  binary
+*.ase  binary
+*.aseprite binary
+*.kra  binary
+*.blend binary
+*.fbx  binary
+*.obj  binary
+*.gltf text eol=lf
+*.glb  binary
+*.mp3  binary
+*.wav  binary
+*.ogg  binary
+*.flac binary
+*.mp4  binary
+*.mov  binary
+*.webm binary
+*.ttf  binary
+*.otf  binary
+*.woff binary
+*.woff2 binary
+*.zip  binary
