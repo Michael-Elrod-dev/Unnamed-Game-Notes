@@ -71,7 +71,11 @@ Thin on purpose. The vault is new and its patterns have not emerged yet.
 
 Settled conventions get added below as the team makes them.
 
-<!-- conventions go here as they are decided -->
+- **Links.** Shortest form. Write `[[Combat]]`, never the full vault path. Add an alias only when the display text should differ from the filename, as in `[[05-Jotenheim|Jotenheim]]`. Obsidian is configured to generate this format automatically.
+- **Entity notes.** Units, structures, enemies, bosses, and locations use the matching template in `99-Templates`. One entity per note.
+- **Markers.** Unresolved items get **Open:**. Suggestions that no one has agreed to get **Proposal:**. Neither is ever silently promoted into plain text.
+- **No manual index notes.** The file explorer and backlinks handle navigation. `Game Overview` is the only hub.
+- **No tags and no frontmatter.** Decided against both.
 
 ## Scope
 
