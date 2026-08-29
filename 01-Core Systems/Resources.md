@@ -12,6 +12,12 @@ Resources sit on map tiles outside the city. Workers are assigned to a node, tra
 - Sending workers on a job that cannot finish before the fog arrives is allowed and not blocked.
 - Anything caught in the fog when it rolls in is lost immediately. See [[Raid Sequence]].
 
+### Reference
+
+![[WarcraftResources.jpg]]
+
+Warcraft 3. Workers haul lumber back in +10 increments instead of one payout at the end of the job. Ours accumulates per turn on the node, and the effect on play is the same, since partial work still pays. Resource counters sit top right and the structures are what the haul buys. See [[Structures]].
+
 ### Workers are expendable
 
 Because collection is incremental, spending workers to squeeze a last batch out of a node is real play and not a mistake. This matters most before a boss, where the economy has no future and material does. Workers being cheap is what makes that a decision instead of a trap.

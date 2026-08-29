@@ -10,6 +10,12 @@ Hex grid map about the size of one continent in Civ. Larger than the camera view
 - Structures can only go inside the city footprint. See [[City & Building]].
 - Resource nodes sit outside the footprint. See [[Resources]].
 
+### Reference
+
+![[CivMap.png]]
+
+Civ 6. The hex grid, the terrain types, and the tile improvements are the target. Terrain reads at a glance here, with grassland, forest, mountain, desert, and coast all separable without labels. The white boundary lines are territory that grew with population, which is the one thing here we are not copying. See [[City & Building]].
+
 ### Open
 
 - **Open:** The terrain list.
