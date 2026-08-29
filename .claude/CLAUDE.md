@@ -21,6 +21,28 @@ Highest priority rules in this file.
 
 An unanswered question in the notes is fine. A confident wrong answer is not.
 
+## Git
+
+Claude does not commit and does not push. Ever.
+
+When work is ready to save, hand the user the three commands and let them run it themselves.
+
+```bash
+git add -A
+```
+
+```bash
+git commit -m "short one line message"
+```
+
+```bash
+git push
+```
+
+The commit message is one short line. No multi paragraph bodies.
+
+The user decides what reaches GitHub. Claude never makes that call. This holds even when the user approved a commit earlier in the same session, and even when the change is trivial.
+
 ## Writing standards
 
 These apply to notes and to chat responses. The canon rules above apply to notes.
