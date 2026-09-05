@@ -30,7 +30,7 @@ Single player turn based roguelite. You hold a fixed city on a hex map against e
 
 ### Setting
 
-Undecided and intentionally open. Every system in this vault works without naming a setting.
+Undecided and open.
 
 Candidates discussed are high fantasy, zombie apocalypse, and a Chernobyl themed run toward increasingly mutated creatures. Choosing across themes is out of scope. Choosing a race inside one theme is in scope. See [[Open Questions]].
 
